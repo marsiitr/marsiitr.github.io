@@ -17,6 +17,9 @@ layout: default
   {% if page.bootstrap %}
   <div class="bootstrap-iso">
   {% endif %}
+  {% if page.video %}
+  <center><iframe width="100%" height="500" src= {{ page.video }} style="padding: 0%;" allowfullscreen="allowfullscreen"></iframe></center>
+  {% endif %}
 	{{ content }}
   {% if page.bootstrap %}
   </div>

@@ -2,6 +2,7 @@
 layout: page
 title: ABOUT
 title1: ABOUT
+video: "https://www.youtube.com/embed/jT3ANosarUQ?autoplay=1"
 permalink: /about/
 feature-img: "assets/img/pexels/pcb4.jpg"
 tags: [About, MaRS]
@@ -15,7 +16,7 @@ The Models and Robotics Section has been a part of Hobbies Club, IIT Roorkee sin
 
 
 
-![My helpful screenshot]({{ "/assets/img/pexels/board.jpg" | absolute_url }})
+
 
 
 

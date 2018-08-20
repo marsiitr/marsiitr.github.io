@@ -3,7 +3,7 @@ layout: post
 title: MaRS Intro Video
 feature-img: "assets/img/pexels/intro.png"
 thumbnail: "assets/img/thumbnails/intro.png"
-video: "https://www.youtube.com/embed/jT3ANosarUQ?autoplay=1"
+video: "https://www.youtube.com/embed/PvWMsGE5gDQ?autoplay=1"
 excerpt_separator: <!--more-->
 ---
 <p style="text-align:justify;">
