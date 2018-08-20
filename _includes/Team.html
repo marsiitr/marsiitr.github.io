@@ -1,0 +1,72 @@
+
+
+<hr>
+{% for member in site.data.members %}
+  <div class="polaroid" style="float: left;">
+		<img src="{{ member.img1 | relative_url }}" class="image">
+        <div class="container">
+	       	<p style="text-align: center">
+				<b>{{ member.name1 }}</b><br>	
+				<i>{{ member.role1 }}</i>
+				<br>
+		           {% if member.facebook1 %} 
+					 <a href="https://www.facebook.com/{{ member.facebook1 }}" target="_blank" >
+						<span class="fa-stack fa-lg">
+							<i class="fa fa-facebook fa-stack-1x"></i>
+						</span>
+					 </a> 
+				    {% endif %}
+				   {% if member.github1 %}
+				     <a href="https://github.com/{{ member.github1 }}" target="_blank" >
+					  <span class="fa-stack fa-lg">
+						  <i class="fa fa-github fa-stack-1x "></i>
+					     </span>
+				     </a>
+				    {% endif %}
+				    {% if member.linkedin1 %}
+				      <a href="{{ member.linkedin1 }}" target="_blank">
+					   <span class="fa-stack fa-lg">
+					   <i class="fa fa-linkedin fa-stack-1x"></i>
+					   </span>
+				      </a>
+				    {% endif %}	
+			</p>
+	  </div> 
+  </div>
+  {% if member.name2 %}
+  <div class="polaroid" style="float: right;">
+		<img src="{{ member.img2 | relative_url }}" class="image">
+        <div class="container">
+	       	<p style="text-align: center">
+				<b>{{ member.name2 }}</b><br>
+				<i>{{ member.role2 }}</i><br>	
+		           {% if member.facebook2 %} 
+					 <a href="https://www.facebook.com/{{ member.facebook2 }}" target="_blank" >
+						<span class="fa-stack fa-lg">
+							<i class="fa fa-facebook fa-stack-1x"></i>
+						</span>
+					 </a> 
+				    {% endif %}
+				   {% if member.github2 %}
+				     <a href="https://github.com/{{ member.github2 }}" target="_blank" >
+					  <span class="fa-stack fa-lg">
+						  
+						  <i class="fa fa-github fa-stack-1x "></i>
+					     </span>
+				     </a>
+				    {% endif %}
+				    {% if member.linkedin2 %}
+				      <a href="{{ member2.linkedin }}" target="_blank">
+					   <span class="fa-stack fa-lg">
+					   
+					   <i class="fa fa-linkedin fa-stack-1x"></i>
+					   </span>
+				      </a>
+				    {% endif %}	
+			</p>
+	  </div> 
+  </div>
+  {% endif %}
+
+
+{% endfor %}
