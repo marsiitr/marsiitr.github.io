@@ -20,6 +20,8 @@
     <!-- Menu -->
     <ul class="hide">
         <!-- Auto Generation of NORMAL pages in the navbar -->
+        
+        {% assign name_page = "" %}
         <li class="separator"> | </li>
         <li>
             <a class="clear" href="{{ site.baseurl }}/"><b>
@@ -27,7 +29,6 @@
             </b>
             </a>
         </li>
-        {% assign name_page = "" %}
         {% for page in site.pages %}
         {% if page.title and page.hide != true %}
         {% if name_page contains page.title %}
