@@ -1,6 +1,7 @@
 ---
 layout: post
-title: <i> The only limit is your imagination!</i>
+title:  Idea Quest
+subtitle: <i>The only limit is your Imagination!</i>
 feature-img: "assets/img/pexels/think.jpg"
 thumbnail: "assets/img/thumbnails/iit.jpg"
 excerpt_separator: <!--more-->

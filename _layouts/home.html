@@ -12,6 +12,7 @@ layout: default
 
   <div class="posts">
     {% for post in paginator.posts %}
+    <a href="{{ post.url | prepend: site.baseurl }}">
     <div class="post-teaser">
       {% if post.thumbnail %} 
       <div class="post-img">
@@ -38,6 +39,7 @@ layout: default
           </div>
       </span>
     </div>
+  </a>
     {% endfor %}
   </div>
 

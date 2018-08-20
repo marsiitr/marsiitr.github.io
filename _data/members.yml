@@ -38,6 +38,19 @@
   facebook2: 100011588744611
   visible: true 
 
+- name1: Vishal Singh
+  img1: "assets/img/Core_Team/vishal.jpg"
+  role1: Project Head
+  linkedin1: 
+  facebook1: vishalsinghjnv 
+  visible: true
+  name2: Umesh Kumawat 
+  img2: "assets/img/Core_Team/umesh.jpg"
+  role2: Project Head
+  github2: 
+  facebook2: 100009697329150
+  linkedin2: 
+  visible: true    
 
   
 - name1: Shivam Maloo 
@@ -46,14 +59,15 @@
   github1: 
   facebook1: shivam.maloo.8
   linkedin1: 
-  visible1: true   
-  name2: Umesh Kumawat 
-  img2: "assets/img/Core_Team/umesh.jpg"
-  role2: Project Head
+  visible1: true
+  name2: Nitin Yadav 
+  img2 : "assets/img/Core_Team/nitin.jpg"
+  role2: Joint Secretary
   github2: 
-  facebook2: 100009697329150
+  facebook2: 100002014363690
   linkedin2: 
-  visible: true   
+  visible2: true   
+     
 
 - name1: Alok Gupta 
   img1 : "assets/img/Core_Team/alok.jpg"
@@ -85,24 +99,10 @@
   linkedin2: 
   visible2: true
 
-- name1: Nitin Yadav 
-  img1 : "assets/img/Core_Team/nitin.jpg"
-  role1: Joint Secretary
-  github1: 
-  facebook1: 100002014363690
-  linkedin1: 
-  visible1: true
-  name2:  Shashwat Agrawal
-  img2 :  "assets/img/Core_Team/shashwat.JPG"
-  role2: Core Member
-  github2: 
-  facebook2: shashwat.agrawal.58
-  linkedin2: 
-  visible: true    
 
 - name1: Sourabh Sonker 
   img1 : "assets/img/Core_Team/sourabh.JPG"
-  role1: Core Members
+  role1: Core Member
   github1: 
   facebook1: sourabh.sonker.908
   linkedin1: 
@@ -114,3 +114,11 @@
   facebook2: vikashkumar.meel
   linkedin2: 
   visible: true  
+
+- name1:  Shashwat Agrawal
+  img1 :  "assets/img/Core_Team/shashwat.JPG"
+  role1: Core Member
+  github1: 
+  facebook1: shashwat.agrawal.58
+  linkedin1: 
+  visible: true    
