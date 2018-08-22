@@ -5,6 +5,7 @@ subtitle: <i>The only limit is your Imagination!</i>
 feature-img: "assets/img/pexels/think.jpg"
 thumbnail: "assets/img/thumbnails/iit.jpg"
 excerpt_separator: <!--more-->
+tag: [Idea Quest]
 ---
 
 <p style="text-align:justify;">

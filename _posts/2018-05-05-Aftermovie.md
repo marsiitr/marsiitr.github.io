@@ -5,6 +5,7 @@ feature-img: "assets/img/pexels/Srishti.jpg"
 thumbnail: "assets/img/thumbnails/Srishti.jpg"
 video: "https://www.youtube.com/embed/aTalZBuZauE?autoplay=1"
 excerpt_separator: <!--more-->
+tag: [Srishti, Aftermovie]
 ---
 
 <p style="text-align:justify;">Srishti '18 has been a huge success because of the hard-work of various students. It was the audience which was the encouragement for all of us. 

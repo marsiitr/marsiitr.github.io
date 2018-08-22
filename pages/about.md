@@ -5,7 +5,6 @@ title1: ABOUT
 video: "https://www.youtube.com/embed/jT3ANosarUQ?autoplay=1"
 permalink: /about/
 feature-img: "assets/img/pexels/pcb4.jpg"
-tags: [About, MaRS]
 ---
 <p style = " text-align: justify;">
 There is a saying – <b><i>“Think beyond your thoughts.”</i></b> And this is just the apt place to implement it. This section is a perfect place for all the robot enthusiasts. This is the place where one can actually get the feeling of ‘T’ in “IIT”!
