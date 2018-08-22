@@ -5,7 +5,7 @@ feature-img: "assets/img/pexels/intro.png"
 thumbnail: "assets/img/thumbnails/intro.png"
 video: "https://www.youtube.com/embed/PvWMsGE5gDQ?autoplay=1"
 excerpt_separator: <!--more-->
-tag: [Intro Vodeo,MaRS]
+tag: [Intro Video,MaRS]
 ---
 <p style="text-align:justify;">
 Hope you are enjoying your stay at IITR. The premier Robotics group of IITR welcomes you all to R-Land.
