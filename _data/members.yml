@@ -142,13 +142,13 @@
 #   visible: true
 
 
-# - name: Shreeyash Geda
-#   img: assets/img/Core_Team/shreeyash.jpg
-#   role: Member
-#   github: 
-#   facebook: shreeyash.geda.1
-#   linkedin:
-#   visible: true
+- name: Shreeyash Geda
+  img: assets/img/Core_Team/shreeyash.jpg
+  role: Member
+  github: Shreeyash-iitr
+  facebook: shreeyash.geda.1
+  linkedin: https://www.linkedin.com/in/sgeda/
+  visible: true
 
 # - name: Dhruv Sehgal
 #   img : assets/img/Core_Team/dhruv.jpg
@@ -183,21 +183,21 @@
   linkedin: https://www.linkedin.com/in/pranjal-mishra-169365152
   visible: true
 
-# - name: Yashutosh Bansal
-#   img : assets/img/Core_Team/yashutosh.jpg
-#   role: Member
-#   github: 
-#   facebook: yashutosh.bansal
-#   linkedin: 
-#   visible: true
+- name: Yashutosh Bansal
+  img : assets/img/Core_Team/yashutosh.jpg
+  role: Member
+  github: yashutoshbansal
+  facebook: yashutosh.bansal
+  linkedin: https://www.linkedin.com/in/yashutosh-bansal-110263158/
+  visible: true
 
-# - name: Tejasva Soni
-#   img: assets/img/Core_Team/tejasva.jpg
-#   role: Member
-#   github: 
-#   facebook: tejasva.soni
-#   linkedin:
-#   visible: true
+- name: Tejasva Soni
+  img: assets/img/Core_Team/tejasva.jpg
+  role: Member
+  github: 
+  facebook: tejasva.soni
+  linkedin:
+  visible: true
 
 # - name: Pratikesh Thakur
 #   img : assets/img/Core_Team/pratikesh.jpg
