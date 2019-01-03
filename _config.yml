@@ -105,6 +105,8 @@ collections:
     permalink: /:collection/:name
 
 
+
+
 # BUILD SETTINGS
 markdown: kramdown
 highlighter: rouge

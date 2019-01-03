@@ -1,19 +1,30 @@
-div.polaroid {
-    width: 40%;
+.column {
+  float: left;
+  width: 33.3%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -0.5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+div.polaroid {  
     background-color: white;
     border-radius: 2%;
     margin: 5%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
-
+    text-align: center;
+   
   }
   .polaroid:hover{
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 1);
    }
   
-  div.container {
-    text-align: center;
-    
-  }
   .image {
   
           display: block;
@@ -31,4 +42,11 @@ div.polaroid {
  margin:5%;
 display: block;
 }
+
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+
 }

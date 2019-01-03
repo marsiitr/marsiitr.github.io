@@ -1,124 +1,208 @@
 # Members
-- name1: Aayushi Shrivastava
-  img1: "assets/img/Core_Team/aayushi.jpg" 
-  role1: Secretary
-  linkedin1: https://www.linkedin.com/in/aayushi-shrivastava-37a6b413a
-  facebook1: 100009857642161
+- name: Aayushi Shrivastava
+  img: "assets/img/Core_Team/aayushi.jpg" 
+  role: Secretary
+  linkedin: https://www.linkedin.com/in/aayushi-shrivastava-37a6b413a
+  facebook: 100009857642161
   visible: true
-  name2: Abhimanyu Bhambhaniya 
-  img2 : "assets/img/Core_Team/abhimanyu.jpg"
-  role2: Project Head
-  github2: 
-  facebook2: abhimanyu.bambhainya
-  linkedin2: 
-  visible: true  
-- name1: Aman Singh 
-  img1 : "assets/img/Core_Team/aman.JPG"
-  role1: Project Head
-  github1: 
-  facebook1: AmanHomecoming 
-  linkedin1: 
+
+- name: Abhimanyu Bambhainya
+  img : "assets/img/Core_Team/abhimanyu.jpg"
+  role: Project Head
+  github: 
+  facebook: abhimanyu.bambhainya
+  linkedin: 
   visible: true
-  name2: Karan Yadav 
-  img2 : "assets/img/Core_Team/karan.jpg"
-  role2: Project Head
-  github2: 
-  facebook2: karan.yadav.547389
-  linkedin2: 
+
+
+- name: Aman Singh 
+  img : "assets/img/Core_Team/aman.JPG"
+  role: Project Head
+  github: 
+  facebook: AmanHomecoming 
+  linkedin: 
   visible: true
-- name1: Nikhil Kumar
-  img1: "assets/img/Core_Team/nikhil.jpg"
-  role1: Project Head
-  linkedin1: https://www.linkedin.com/in/kumarnikhil1198
-  facebook1: kumar.nikhil1198 
+
+- name: Karan Yadav 
+  img : "assets/img/Core_Team/karan.jpg"
+  role: Project Head
+  github: 
+  facebook: karan.yadav.547389
+  linkedin: 
   visible: true
-  name2: Prashant Kumar 
-  img2: "assets/img/Core_Team/prashant.jpg"
-  role2: Project Haed 
-  facebook2: 100011588744611
+
+- name: Nikhil Kumar
+  img: "assets/img/Core_Team/nikhil.jpg"
+  role: Project Head
+  linkedin: https://www.linkedin.com/in/kumarnikhil1198
+  facebook: kumar.nikhil1198 
+  visible: true
+
+- name: Prashant Kumar 
+  img: "assets/img/Core_Team/prashant.jpg"
+  role: Project Haed 
+  facebook: 100011588744611
   visible: true 
 
-- name1: Vishal Singh
-  img1: "assets/img/Core_Team/vishal.jpg"
-  role1: Project Head
-  linkedin1: 
-  facebook1: vishalsinghjnv 
+- name: Vishal Singh
+  img: "assets/img/Core_Team/vishal.jpg"
+  role: Project Head
+  linkedin: 
+  facebook: vishalsinghjnv 
   visible: true
-  name2: Umesh Kumawat 
-  img2: "assets/img/Core_Team/umesh.jpg"
-  role2: Project Head
-  github2: 
-  facebook2: 100009697329150
-  linkedin2: 
+
+- name: Umesh Kumawat 
+  img: "assets/img/Core_Team/umesh.jpg"
+  role: Project Head
+  github: 
+  facebook: 100009697329150
+  linkedin: 
   visible: true    
 
   
-- name1: Shivam Maloo 
-  img1 : "assets/img/Core_Team/shivam.jpg"
-  role1: Project Head
-  github1: 
-  facebook1: shivam.maloo.8
-  linkedin1: 
-  visible1: true
-  name2: Nitin Yadav 
-  img2 : "assets/img/Core_Team/nitin.jpg"
-  role2: Joint Secretary
-  github2: 
-  facebook2: 100002014363690
-  linkedin2: 
-  visible2: true   
+- name: Shivam Maloo 
+  img : "assets/img/Core_Team/shivam.jpg"
+  role: Project Head
+  github: 
+  facebook: shivam.maloo.8
+  linkedin: 
+  visible: true
+
+- name: Nitin Yadav 
+  img : "assets/img/Core_Team/nitin.jpg"
+  role: Joint Secretary
+  github: 
+  facebook: 100002014363690
+  linkedin: 
+  visible: true   
      
 
-- name1: Alok Gupta 
-  img1 : "assets/img/Core_Team/alok.jpg"
-  role1: Joint Secretary
-  github1: 
-  facebook1: 100012330910173
-  linkedin1: 
-  visible1: true
-  name2: Shubhanshu Agarwal 
-  img2 : "assets/img/Core_Team/shubhanshu.JPG"
-  role2: Joint Secretary
-  github2: Shubhanshu07
-  facebook2: shubhanshu.agarwal.750
-  linkedin2: https://www.linkedin.com/in/shubhanshu-agarwal-0707
-  visible2: true
+- name: Alok Gupta 
+  img : "assets/img/Core_Team/alok.jpg"
+  role: Joint Secretary
+  github: 
+  facebook: 100012330910173
+  linkedin: 
+  visible: true
 
-- name1: Divyansh Gupta
-  img1: "assets/img/Core_Team/divyansh.jpg"
-  role1: Joint Secretary
-  github1: 
-  facebook1: Divyansh.2504
-  linkedin1:
-  visible1: true
-  name2: Pratham Meena 
-  img2 : "assets/img/Core_Team/pratham.jpg"
-  role2: Joint Secretary
-  github2: 
-  facebook2: uchiha.itachi.1508
-  linkedin2: 
-  visible2: true
+- name: Shubhanshu Agarwal 
+  img : "assets/img/Core_Team/shubhanshu.JPG"
+  role: Joint Secretary
+  github: Shubhanshu07
+  facebook: shubhanshu.agarwal.750
+  linkedin: https://www.linkedin.com/in/shubhanshu-agarwal-0707
+  visible: true
+
+- name: Divyansh Gupta
+  img: "assets/img/Core_Team/divyansh.jpg"
+  role: Joint Secretary
+  github: 
+  facebook: Divyansh.2504
+  linkedin:
+  visible: true
+
+- name: Pratham Meena 
+  img : "assets/img/Core_Team/pratham.jpg"
+  role: Joint Secretary
+  github: 
+  facebook: uchiha.itachi.1508
+  linkedin: 
+  visible: true
+
+- name: Avdesh Ranwa
+  img: assets/img/Core_Team/avdesh.jpg
+  role: Member
+  github: 
+  facebook: avdesh.ranwa
+  linkedin:
+  visible: true
+
+# - name: Yawan Gupta 
+#   img : assets/img/Core_Team/yawan.jpg
+#   role: Member
+#   github: 
+#   facebook: yawan.gupta
+#   linkedin: 
+#   visible: true
+
+- name: Harshil Patel
+  img: assets/img/Core_Team/harshil.jpg
+  role: Member
+  github: harshil99
+  facebook: harshil.patel.230499
+  linkedin: https://www.linkedin.com/in/harshil-patel-419324148/
+  visible: true
+
+# - name: Ujjwal Baranwal
+#   img : assets/img/Core_Team/ujjwal.jpg
+#   role: Member
+#   github: 
+#   facebook: ujjwal.baranwal.315
+#   linkedin: 
+#   visible: true
 
 
-- name1: Sourabh Sonker 
-  img1 : "assets/img/Core_Team/sourabh.JPG"
-  role1: Core Member
-  github1: 
-  facebook1: sourabh.sonker.908
-  linkedin1: 
-  visible1: true
-  name2:  Vikash Choudhary
-  img2 :  "assets/img/Core_Team/vikash.jpg"
-  role2: Core Member
-  github2: 
-  facebook2: vikashkumar.meel
-  linkedin2: 
-  visible: true  
+# - name: Shreeyash Geda
+#   img: assets/img/Core_Team/shreeyash.jpg
+#   role: Member
+#   github: 
+#   facebook: shreeyash.geda.1
+#   linkedin:
+#   visible: true
 
-- name1:  Shashwat Agrawal
-  img1 :  "assets/img/Core_Team/shashwat.JPG"
-  role1: Core Member
-  github1: 
-  facebook1: shashwat.agrawal.58
-  linkedin1: 
-  visible: true    
+# - name: Dhruv Sehgal
+#   img : assets/img/Core_Team/dhruv.jpg
+#   role: Member
+#   github: 
+#   facebook: dhruv.sehgal.566
+#   linkedin: 
+#   visible: true
+
+# - name: Prachi Agarwal
+#   img:  assets/img/Core_Team/prachi.jpg
+#   role: Member
+#   github: 
+#   facebook: prrachiagarwal2230473
+#   linkedin:
+#   visible: true
+
+
+# - name: Riya Bhalla
+#   img : assets/img/Core_Team/riya.jpg
+#   role: Member
+#   github: 
+#   facebook: riya.bhalla.587
+#   linkedin: 
+#   visible: true
+
+- name: Pranjal Mishra
+  img: "assets/img/Core_Team/pranjal.jpg"
+  role: Member
+  github: Pranjal1751
+  facebook: pranjal.mishra5038
+  linkedin: https://www.linkedin.com/in/pranjal-mishra-169365152
+  visible: true
+
+# - name: Yashutosh Bansal
+#   img : assets/img/Core_Team/yashutosh.jpg
+#   role: Member
+#   github: 
+#   facebook: yashutosh.bansal
+#   linkedin: 
+#   visible: true
+
+# - name: Tejasva Soni
+#   img: assets/img/Core_Team/tejasva.jpg
+#   role: Member
+#   github: 
+#   facebook: tejasva.soni
+#   linkedin:
+#   visible: true
+
+# - name: Pratikesh Thakur
+#   img : assets/img/Core_Team/pratikesh.jpg
+#   role: Member
+#   github: 
+#   facebook: pratikesh.thakur.5
+#   linkedin: 
+#   visible: true
