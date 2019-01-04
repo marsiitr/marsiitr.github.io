@@ -1,6 +1,6 @@
 # SITE CONFIGURATION
 baseurl: ""
-url: "https://marsiitr.github.io"
+url: "http://mars.iitr.ac.in"
 title: MaRS # site's title
 description: "Models and Robotics Section,IITR" # used by search engines
 
