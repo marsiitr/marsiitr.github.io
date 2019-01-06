@@ -158,13 +158,13 @@
 #   linkedin: 
 #   visible: true
 
-# - name: Prachi Agarwal
-#   img:  assets/img/Core_Team/prachi.jpg
-#   role: Member
-#   github: 
-#   facebook: prrachiagarwal2230473
-#   linkedin:
-#   visible: true
+- name: Prachi Agarwal
+  img:  assets/img/Core_Team/prachi.jpg
+  role: Member
+  github: Prachi0141
+  facebook: prrachiagarwal2230473
+  linkedin: https://www.linkedin.com/in/prachi-agarwal-14086314a/
+  visible: true
 
 
 # - name: Riya Bhalla

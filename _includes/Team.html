@@ -1,40 +1,43 @@
-
+{% assign rows = site.data.members.size | divided_by: 3.0 | ceil %}
 <hr>
-{% for member in site.data.members %}
-  <div class="row">
-  	<div class="column">
-  	  <div class="polaroid" >
-		{% if member.img %} 
-		<img src="{{ member.img | relative_url }}" class="image">
-        {% endif %} 
-	       	<p style="text-align: center">
-				<b>{{ member.name }}</b><br>	
-				<i>{{ member.role }}</i>
-				<br>
-		           {% if member.facebook %} 
-					 <a href="https://www.facebook.com/{{ member.facebook }}" target="_blank" >
-						<span class="fa-stack fa-lg">
-							<i class="fa fa-facebook fa-stack-1x"></i>
-						</span>
-					 </a> 
-				    {% endif %}
-				   {% if member.github %}
-				     <a href="https://github.com/{{ member.github }}" target="_blank" >
-					  <span class="fa-stack fa-lg">
-						  <i class="fa fa-github fa-stack-1x "></i>
-					     </span>
-				     </a>
-				    {% endif %}
-				    {% if member.linkedin %}
-				      <a href="{{ member.linkedin }}" target="_blank">
-					   <span class="fa-stack fa-lg">
-					   <i class="fa fa-linkedin fa-stack-1x"></i>
-					   </span>
-				      </a>
-				    {% endif %}
-			</p>
-		</div>
-  </div>
+{% for i in (1..rows) %}
+{% assign offset = forloop.index0 | times: 3 %}
+ <div class="row">
+	{% for member in site.data.members  limit :3 offset:offset%}
+	 	<div class="column">
+	  	 	<div class="polaroid" >
+				{% if member.img %} 
+				<img src="{{ member.img | relative_url }}" class="image">
+	        	{% endif %} 
+		       	<p style="text-align: center">
+					<b>{{ member.name }}</b><br>	
+					<i>{{ member.role }}</i>
+					<br>
+			           {% if member.facebook %} 
+						 <a href="https://www.facebook.com/{{ member.facebook }}" target="_blank" >
+							<span class="fa-stack fa-lg">
+								<i class="fa fa-facebook fa-stack-1x"></i>
+							</span>
+						 </a> 
+					    {% endif %}
+					   {% if member.github %}
+					     <a href="https://github.com/{{ member.github }}" target="_blank" >
+						  <span class="fa-stack fa-lg">
+							  <i class="fa fa-github fa-stack-1x "></i>
+						     </span>
+					     </a>
+					    {% endif %}
+					    {% if member.linkedin %}
+					      <a href="{{ member.linkedin }}" target="_blank">
+						   <span class="fa-stack fa-lg">
+						   <i class="fa fa-linkedin fa-stack-1x"></i>
+						   </span>
+					      </a>
+					    {% endif %}
+				</p>
+		  </div>
+	  </div>
+	{% endfor %}
+</div>
 {% endfor %}
 
-</div>
