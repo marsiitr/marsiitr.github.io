@@ -133,13 +133,13 @@
   linkedin: https://www.linkedin.com/in/harshil-patel-419324148/
   visible: true
 
-# - name: Ujjwal Baranwal
-#   img : assets/img/Core_Team/ujjwal.jpg
-#   role: Member
-#   github: 
-#   facebook: ujjwal.baranwal.315
-#   linkedin: 
-#   visible: true
+- name: Ujjwal Baranwal
+  img : assets/img/Core_Team/ujjwal.jpg
+  role: Member
+  github:   
+  facebook: ujjwal.baranwal.315
+  linkedin: https://www.linkedin.com/in/ujjwal-baranwal-4a175a14a
+  visible: false
 
 
 - name: Shreeyash Geda
