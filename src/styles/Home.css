@@ -39,19 +39,21 @@
 }
 
 .left {
-  max-width: 600px;
+  max-width: 700px;
 }
 
 
 .main-content h2 {
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 800;
   line-height: 1.2;
   color: aliceblue;
+  margin-bottom: -5px;
 }
 
 .main-content p {
   margin-top: 20px;
+  font-size: 20px;
 }
 
 h4 {
@@ -64,10 +66,10 @@ h4 {
 }
 
 .header-line {
-  box-shadow: 2px 4px 8px #D632A1;
+  box-shadow: #6d0f50 0px 1px 5px 5px;
   font-family: Arial, Helvetica, sans-serif;
-  padding: 10px;
-  font-size: 17px;
+  padding: 10px 20px;
+  font-size: 20px;
   color: whitesmoke;
   background-color: transparent;
   border: 2px solid gray;
@@ -80,7 +82,7 @@ button {
   border: none;
   color: rgb(2, 2, 37);
   font-family: Arial, Helvetica, sans-serif;
-  padding: 15px 30px;
+  padding: 15px 40px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -142,10 +144,22 @@ button:hover {
     font-size: 16px;
     width: auto;
     padding: 20px;
+    height: 90vh;
+    margin-top: -60px;
   }
 
   .main-content h2 {
-    font-size: 32px;
+    font-size: 36px;
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .left p {
+    font-size: 18px;
   }
 
   .homepage-console-head-container,
@@ -225,7 +239,7 @@ button:hover {
 }
 
 .canvas-container {
-  height: 600px;
+  height: 700px;
 }
 
 @media screen and (min-width: 1024px) {

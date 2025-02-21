@@ -1,21 +1,9 @@
 import React from 'react';
 import '../styles/Home.css';
 import Console from './Console/Console.js'
-import { useState, useRef } from "react";
-// import Model from './Model/model'
 import ParticlesComponent from './particles.js';
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls, useGLTF } from "@react-three/drei";
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-
-const Model = () => {
-  const { scene } = useGLTF("/robot1.glb");
-  const modelRef = useRef();
-
-  return <primitive ref={modelRef} object={scene} scale={[2, 2, 2]} />;
-
-};
 
 const cardsData = [
   {
@@ -68,9 +56,9 @@ const Homepage = (props) => {
         </div>
 
 
-         <div className="canvas-container">
-            <img src="/model.png" alt="Robot" className="" />
-         </div>
+        <div className="canvas-container">
+          <img src="/model.png" alt="Robot" className="" />
+        </div>
 
 
 
@@ -79,7 +67,7 @@ const Homepage = (props) => {
 
       <div className='homepage-console-head-container'>
         <div className='homepage-console-head'>
-        Enter commands, ignite robots!
+          Enter commands, ignite robots!
         </div>
       </div>
       <div className='homepage-console'>
@@ -89,7 +77,7 @@ const Homepage = (props) => {
       <br />
       <h4>Our Verticals</h4>
       <div className="cards-container">
-        {cardsData.map((card, index)=>(
+        {cardsData.map((card, index) => (
           <div className="card" key={index}>
             <img src={card.image} alt={card.title} />
             <h3 className={card.titleClass}>{card.title}</h3>
@@ -98,18 +86,18 @@ const Homepage = (props) => {
         ))}
       </div>
       <Carousel>
-                <div>
-                    <img src="https://earthwatcher.photo.blog/wp-content/uploads/2019/07/grand-tetons-at-twilight-from-schwabachers-landing.jpg" />
-                    
-                </div>
-                <div>
-                    <img src="https://earthwatcher.photo.blog/wp-content/uploads/2019/07/grand-tetons-at-twilight-from-schwabachers-landing.jpg" />
-                    
-                </div>
-                <div>
-                    <img src="https://earthwatcher.photo.blog/wp-content/uploads/2019/07/grand-tetons-at-twilight-from-schwabachers-landing.jpg" />
-                    
-                </div>
+        <div>
+          <img src="https://earthwatcher.photo.blog/wp-content/uploads/2019/07/grand-tetons-at-twilight-from-schwabachers-landing.jpg" alt='carousel' />
+
+        </div>
+        <div>
+          <img src="https://earthwatcher.photo.blog/wp-content/uploads/2019/07/grand-tetons-at-twilight-from-schwabachers-landing.jpg" alt='carousel' />
+
+        </div>
+        <div>
+          <img src="https://earthwatcher.photo.blog/wp-content/uploads/2019/07/grand-tetons-at-twilight-from-schwabachers-landing.jpg" alt='carousel' />
+
+        </div>
       </Carousel>
     </div>
   );
