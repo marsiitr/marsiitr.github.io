@@ -2,8 +2,8 @@ import React from 'react';
 import '../styles/Home.css';
 import Console from './Console/Console.js'
 import ParticlesComponent from './particles.js';
-import { Carousel } from 'react-responsive-carousel';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-3d-carousel'
+import 'react-responsive-3d-carousel/dist/styles.css'
 
 const cardsData = [
   {
@@ -37,6 +37,12 @@ const cardsData = [
     titleClass: 'robotics-title'
   },
 ];
+
+const items = [
+  <img src="https://earthwatcher.photo.blog/wp-content/uploads/2019/07/grand-tetons-at-twilight-from-schwabachers-landing.jpg" alt="image1" />,
+  <img src="https://earthwatcher.photo.blog/wp-content/uploads/2019/07/grand-tetons-at-twilight-from-schwabachers-landing.jpg" alt="image2" />,
+  <img src="https://earthwatcher.photo.blog/wp-content/uploads/2019/07/grand-tetons-at-twilight-from-schwabachers-landing.jpg" alt="image3" />
+]
 
 const Homepage = (props) => {
   return (
@@ -85,20 +91,11 @@ const Homepage = (props) => {
           </div>
         ))}
       </div>
-      <Carousel>
-        <div>
-          <img src="https://earthwatcher.photo.blog/wp-content/uploads/2019/07/grand-tetons-at-twilight-from-schwabachers-landing.jpg" alt='carousel' />
-
-        </div>
-        <div>
-          <img src="https://earthwatcher.photo.blog/wp-content/uploads/2019/07/grand-tetons-at-twilight-from-schwabachers-landing.jpg" alt='carousel' />
-
-        </div>
-        <div>
-          <img src="https://earthwatcher.photo.blog/wp-content/uploads/2019/07/grand-tetons-at-twilight-from-schwabachers-landing.jpg" alt='carousel' />
-
-        </div>
-      </Carousel>
+      <Carousel
+        items={items}
+        startIndex={0}
+        onChange={(currentIndex) => console.log(currentIndex)}
+      />
     </div>
   );
 };
