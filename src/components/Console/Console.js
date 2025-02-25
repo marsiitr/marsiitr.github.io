@@ -192,10 +192,6 @@ const Console = (props) => {
     }
 
     useEffect(() => {
-        const audio = new Audio('https://assets.mixkit.co/active_storage/sfx/2542/2542.wav');
-    }, []);
-
-    useEffect(() => {
         const cursor = document.querySelector('.input-cursor');
         let text = -300 + 9.0 * parseInt(inputValue.length);
         cursor.style.transform = "translate(" + text + "px, 2px)"

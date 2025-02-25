@@ -94,7 +94,7 @@ const Homepage = (props) => {
       <Carousel
         items={items}
         startIndex={0}
-        onChange={(currentIndex) => console.log(currentIndex)}
+        // onChange={(currentIndex) => console.log(currentIndex)}
       />
     </div>
   );
