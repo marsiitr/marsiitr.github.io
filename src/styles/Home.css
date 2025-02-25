@@ -188,6 +188,10 @@ button:hover {
   .canvas-container {
     display: none;
   }
+
+  .team-div {
+    flex-direction: column;
+  }
 }
 
 .cards-container {
@@ -261,6 +265,51 @@ button:hover {
 
 .canvas-container {
   height: 700px;
+}
+
+.team-div {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  /* gap: 20px;  */
+  /* margin-top: 20px; */
+  padding: 40px 30px;
+  /* background-color: #350758; */
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.team-div:hover {
+  cursor: pointer;
+  box-shadow: 0 0 20px 8px rgba(248, 103, 219, 0.078);
+}
+
+.team-member {
+  text-align: center;
+}
+
+.team-member img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #333;
+}
+
+.team-member p {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #e0e0e0;
+}
+
+.carousel {
+  width: 100%;
+  margin: 2%;
 }
 
 @media screen and (min-width: 1024px) {

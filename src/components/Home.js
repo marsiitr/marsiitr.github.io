@@ -98,12 +98,37 @@ const Homepage = (props) => {
           </div>
         ))}
       </div>
-      <Carousel
-        items={items}
-        startIndex={0}
-        onClickItem={() => navigate('/Gallery')}
-      // onChange={(currentIndex) => console.log(currentIndex)}
-      />
+
+      <br />
+      <h4>Our Team</h4>
+      <div className="team-div" onClick={() => navigate('/Teams')}>
+        <div className="team-member">
+          <img src="member.jpg" alt="Member 1" />
+          <p>Member 1</p>
+        </div>
+        <div className="team-member">
+          <img src="member2.jpg" alt="Member 2" />
+          <p>Member 2</p>
+        </div>
+        <div className="team-member">
+          <img src="member3.jpg" alt="Member 3" />
+          <p>Member 3</p>
+        </div>
+        <div className="team-member">
+          <img src="member4.jpg" alt="Member 4" />
+          <p>Member 4</p>
+        </div>
+      </div>
+
+      <br />
+      <h4>Gallery</h4>
+      <div className="carousel">
+        <Carousel
+          items={items}
+          startIndex={0}
+          onClickItem={() => navigate('/Gallery')}
+        />
+      </div>
     </div>
   );
 };
