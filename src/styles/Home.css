@@ -77,6 +77,12 @@ h4 {
   display: inline-block;
 }
 
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
 button {
   background-color: #FCFFFE;
   border: none;
@@ -94,6 +100,17 @@ button {
 
 button:hover {
   background-color: #CDCCCF;
+}
+
+.projects-button {
+  background-color: transparent;
+  border: 1px solid #FCFFFE;
+  color: #FCFFFE;
+}
+
+.projects-button:hover {
+  background-color: #FCFFFE;
+  color: rgb(2, 2, 37);
 }
 
 .gradient-text {
@@ -150,6 +167,10 @@ button:hover {
 
   .main-content h2 {
     font-size: 36px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
   }
 
   .left {

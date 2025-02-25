@@ -4,6 +4,7 @@ import Console from './Console/Console.js'
 import ParticlesComponent from './particles.js';
 import { Carousel } from 'react-responsive-3d-carousel'
 import 'react-responsive-3d-carousel/dist/styles.css'
+import { useNavigate } from 'react-router-dom';
 
 const cardsData = [
   {
@@ -45,6 +46,9 @@ const items = [
 ]
 
 const Homepage = (props) => {
+
+  const navigate = useNavigate();
+
   return (
     <div className="homepage">
       <ParticlesComponent id="tsparticles" />
@@ -58,7 +62,10 @@ const Homepage = (props) => {
             <span className="gradient-text"> Robotics</span> Section, IIT Roorkee
           </h2>
           <p>We're a student group, bonded by our passion for Robotics. Delving into programming, electronics, and AI through projects and workshops.</p>
-          <button>Our Team</button>
+          <div className="hero-buttons">
+            <button onClick={() => navigate('/Teams')}>Our Team</button>
+            <button className='projects-button' onClick={() => navigate('/Projects')}>Our Projects</button>
+          </div>
         </div>
 
 
@@ -94,7 +101,8 @@ const Homepage = (props) => {
       <Carousel
         items={items}
         startIndex={0}
-        // onChange={(currentIndex) => console.log(currentIndex)}
+        onClickItem={() => navigate('/Gallery')}
+      // onChange={(currentIndex) => console.log(currentIndex)}
       />
     </div>
   );
