@@ -30,3 +30,5 @@ yarn-error.log*
 
 /src/components/Loader
 /src/components/Model
+
+.env

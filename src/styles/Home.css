@@ -205,9 +205,9 @@ button:hover {
 .card {
   background: rgba(40, 40, 43, 0.30);
   border-radius: 10px;
-  padding: 20px;
+  padding: 25px;
   color: white;
-  width: 20%;
+  width: 25%;
   min-width: 250px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.3s ease, transform 0.3s ease;
@@ -273,7 +273,7 @@ button:hover {
   width: 80%;
   /* gap: 20px;  */
   /* margin-top: 20px; */
-  padding: 40px 30px;
+  padding: 60px 30px;
   /* background-color: #350758; */
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(12px);
@@ -293,8 +293,8 @@ button:hover {
 }
 
 .team-member img {
-  width: 200px;
-  height: 200px;
+  width: 240px;
+  height: 240px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #333;
@@ -310,6 +310,7 @@ button:hover {
 .carousel {
   width: 100%;
   margin: 2%;
+  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 1024px) {
