@@ -1,7 +1,7 @@
 .nft {
     user-select: none;
     max-width: 300px;
-    margin: 5rem auto;
+    margin: 2rem auto;
     border: 1px solid #ffffff22;
     background-color: #282c34;
     background: linear-gradient(0deg, rgba(40, 44, 52, 1) 0%, rgba(17, 0, 32, .5) 100%);
@@ -28,6 +28,10 @@
       flex-direction: column;
       width: 90%;
       padding: 1rem;
+
+      h2 {
+        color: #ee83e5;
+      }
   
       .tokenImage {
         border-radius: .5rem;
@@ -63,6 +67,7 @@
           align-items: center;
           color: #a89ec9;
           margin-right: .2rem;
+          font-size: 12px;
   
           ins {
             margin: .5rem;
@@ -111,7 +116,7 @@
       top: -10%;
       left: -100%;
       transform: rotate(-45deg);
-      height: 60rem;
+      height: 70rem;
       transition: .7s all;
     }
   
@@ -129,3 +134,8 @@
     }
   }
   
+  @media screen and (max-width: 768px) {
+    .nft {
+      margin: 1.5rem auto;
+    }
+  }

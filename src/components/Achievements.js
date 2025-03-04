@@ -2,7 +2,7 @@ import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { achievements } from './api/achievements';
-import '../styles/Achievements.css'; // Import the new CSS file
+import '../styles/Achievements.css'; 
 import ParticlesComponent from './particles.js';
 
 const AchievementCard = ({ achievement }) => (

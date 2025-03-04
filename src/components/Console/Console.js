@@ -1,20 +1,19 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from 'react-router-dom';
 import "../../styles/Console.css"
-import rick from './assets/hello.gif'
-import dying from './assets/dying.gif'
 import insta from './assets/insta.svg'
 import youtube from './assets/youtube.svg'
 import linkedin from './assets/linkedin.svg'
 import discord from './assets/discord.svg'
-import lazy from "./assets/lazy.jpeg"
 import click2 from "./assets/click-2.wav"
 
 import { validCommands } from "./console-data";
-import { imageToo } from "./console-data";
 import { consoleData } from "./console-data";
 
 
 const Console = (props) => {
+
+    const navigate = useNavigate();
 
     const playAudio = () => {
         const audio = new Audio(click2);
@@ -51,10 +50,10 @@ const Console = (props) => {
         let i = 3;
         const arr = document.querySelectorAll('.github-port');
         const githubPort = arr[arr.length - 1];
-        githubPort.innerHTML = "Opening GitHub on port 3000 in " + i + '...';
+        githubPort.innerHTML = "Opening GitHub in " + i + '...';
         let intervalID = setInterval(() => {
             i--;
-            githubPort.innerHTML = "Opening GitHub on port 3000 in " + i + "...";
+            githubPort.innerHTML = "Opening GitHub in " + i + "...";
             if (i === 0) {
                 clearInterval(intervalID);
             }
@@ -70,7 +69,21 @@ const Console = (props) => {
 
 
     function cd(location) {
+        // Map the command to the desired route
+        const routeMap = {
+            'projects': '/projects',
+            'gallery': '/gallery',
+            'teams': '/teams',
+            'achievements': '/achievements',
+        };
 
+        // Check if the location is valid and navigate
+        if (routeMap[location]) {
+            navigate(routeMap[location]);
+        } else {
+            // If the command is invalid, you can show an error
+            console.log("Invalid location");
+        }
     }
 
     function social(location) {
@@ -125,7 +138,7 @@ const Console = (props) => {
                 return;
             }
             if (trimmedInput === 'surprise me') {
-                const urls = ['https://example.com', 'https://example.org', 'https://example.net'];
+                const urls = ['https://robohub.org/'];
                 urls.forEach(url => {
                     window.open(url, '_blank');
                 });
@@ -133,7 +146,6 @@ const Console = (props) => {
 
 
             if (trimmedInput === 'hello') {
-                // const audio =  new Audio("https://cdn.pixabay.com/download/audio/2022/03/24/audio_1586296311.mp3");
                 const audio = new Audio("https://cdn.pixabay.com/download/audio/2022/03/15/audio_c0bdb2a2d3.mp3?filename=hello-87032.mp3");
                 audio.play();
             }
@@ -178,10 +190,6 @@ const Console = (props) => {
         cursor.style.visibility = 'hidden';
 
     }
-
-    useEffect(() => {
-        const audio = new Audio('https://assets.mixkit.co/active_storage/sfx/2542/2542.wav');
-    }, []);
 
     useEffect(() => {
         const cursor = document.querySelector('.input-cursor');
@@ -234,15 +242,6 @@ const Console = (props) => {
                 }
                 new_line.classList.add('console-text');
                 consoleBody.appendChild(new_line);
-                if (imageToo.includes(term)) {
-                    let img = document.createElement('img');
-                    img.classList.add('console-img');
-                    // img.style.height = '200px';
-                    consoleBody.appendChild(img);
-                    if (term === 'hello') img.src = rick;
-                    else if (term === 'kill') img.src = dying;
-                    else if (term.substring(0, 2) === 'cd') img.src = lazy;
-                }
 
             })
             let space = document.createElement('div');

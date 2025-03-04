@@ -1,14 +1,14 @@
 export const validCommands = ['clear', 'help', 'commands', 'about',
     'hello', 'git', 'home',
     'kill', 'cd projects', 'cd gallery',
-    'cd contact', 'hack',
+    'cd teams', 'cd achievements',
     'social insta', 'social youtube', 'social discord', 'social linkedin',
     '',
     'surprise me',
     '0'
 ];
 
-export const imageToo = ['hello', 'kill', 'cd projects', 'cd gallery', 'cd contact'];
+export const imageToo = ['hello', 'kill', 'cd projects', 'cd gallery', 'cd teams', 'cd achievements'];
 
 export let consoleData = {
     '0': [],
@@ -26,23 +26,20 @@ export let consoleData = {
     }],
     'clear': [],
     'hello': [{
-        'text': "Hello, babygirl! 🥰", 'color': '#FFFF00'
+        'text': "Welcome to Mars! :)", 'color': '#FFFF00'
     }],
     'git': [{
-        'text': "Opening GitHub on port 3000 in 0...", 'color': '#20D6A5', 'class': 'github-port'
+        'text': "Opening GitHub in 0...", 'color': '#20D6A5', 'class': 'github-port'
     }],
     'kill': [{'text': 'goodbye cruel world! 💀', 'color': 'red'}],
-    'cd gallery': [{'text': 'Sorry, interface not built yet. 🤒', 'color': '#FFFF00'}],
-    'cd projects': [{'text': 'Sorry, interface not built yet. 🤒', 'color': '#FFFF00'}],
-    'cd contact': [{'text': 'Sorry, interface not built yet. 🤒', 'color': '#FFFF00'}],
+    'cd gallery': [{'text': 'Redirecting to gallery...', 'color': '#FFFF00'}],
+    'cd projects': [{'text': 'Redirecting to projects...', 'color': '#FFFF00'}],
+    'cd teams': [{'text': 'Redirecting to teams...', 'color': '#FFFF00'}],
+    'cd achievements': [{'text': 'Redirecting to achievements...', 'color': '#FFFF00'}],
     'social youtube': [{'text': 'Opening in new tab...', 'color': '#FFFF00'}],
     'social insta': [{'text': 'Opening in new tab...', 'color': '#FFFF00'}],
     'social linkedin': [{'text': 'Opening in new tab...', 'color': '#FFFF00'}],
     'social discord': [{'text': 'Opening in new tab...', 'color': '#FFFF00'}],
-    'hack': [{
-        'text': "I'm just a dumb and cute terminal built using HTML!",
-        'color': '#F45AED'
-    }, {'text': "So haxer, you canny hack meh bitch! 🤙", 'color': '#F45AED'}],
     'commands': [
         {'text': 'Available Commands: ', 'color': '#F45AED'},
 
@@ -51,14 +48,13 @@ export let consoleData = {
         {'text': 'about', 'color': '#1142CC'},
         {'text': 'hello', 'color': '#1142CC'},
         {'text': 'git', 'color': '#1142CC'},
-        {'text': 'cd {projects, gallery, contact}', 'color': '#1142CC'},
+        {'text': 'cd {projects, gallery, teams, achievements}', 'color': '#1142CC'},
         {'text': 'social {insta, discord, linkedin, youtube}', 'color': '#1142CC'},
-        {'text': 'hack', 'color': '#1142CC'},
         {'text': 'kill', 'color': '#1142CC'},
         {'text': 'clear', 'color': '#1142CC'},
         // {'text': 'surprise me', 'color': '#1142CC'},
     ],
     'surprise me': [
-        {'text': "HUE HUE HUE", 'color': ""}
+        {'text': "Let's learn robots!", 'color': ""}
     ]
 }

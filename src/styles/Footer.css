@@ -1,6 +1,4 @@
 .footer {
-  background: #17062e;
-  background: linear-gradient(135deg, rgba(42, 42, 42, 0.9) 0%, rgba(60, 60, 60, 0.5) 100%);
   color: #fff;
   padding: 20px;
   text-align: center;
@@ -8,80 +6,78 @@
   bottom: 0;
   width: 100%;
   box-sizing: border-box;
-  backdrop-filter: blur(10px); 
+  background: rgba(211, 201, 220, 0.15);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 6.5px );
+  -webkit-backdrop-filter: blur( 6.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; 
-  flex-wrap: wrap;
-  gap: 35px; 
-  max-width: 1200px; 
-  margin: 0 auto; 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
 }
 
-.footer-logo {
+.footer-column {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  flex: 1;
-  text-align: center;
   justify-content: center;
-  left: 50%;
 }
 
-.footer-logo img {
-  width: 100px;
-  margin-bottom: 10px; 
+.logo-column img {
+  width: 150px;
+  height: auto;
 }
 
-.footer-contact {
-  text-align: right;
-  flex: 1;
+.title-column h3 {
+  font-size: 42px;
+  text-align: center;
+  margin: 0;
 }
 
-.footer-contact h4 {
+.contact-column {
+  text-align: left;
+}
+
+.contact-content h4 {
   margin-bottom: 10px;
 }
 
-.footer-contact p {
-  margin: 5px 0; 
-}
-
-.footer-social {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-  flex: 1;
-}
-
-.footer-social a {
-  color: #fff;
-  margin: 0 10px;
+.contact-content p {
+  margin: 5px 0;
 }
 
 .footer-bottom {
   margin-top: 20px;
   font-size: 14px;
   padding-top: 10px;
-  border-top: 1px solid #444; 
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .footer p {
-  margin: 5px 0; 
+  margin: 5px 0;
 }
 
 @media (max-width: 768px) {
   .footer-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    gap: 30px;
   }
 
-  .footer-contact {
+  .contact-column {
     text-align: center;
-    margin-top: -60px;
+  }
+
+  .logo-column img {
+    width: 120px;
+  }
+
+  .title-column h3 {
+    font-size: 18px;
   }
 }

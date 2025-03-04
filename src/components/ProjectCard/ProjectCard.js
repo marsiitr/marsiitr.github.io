@@ -15,10 +15,6 @@ const ProjectCard = ({ image, title, description, price, duration, creatorImage,
             {description}
           </p>
           <div className="tokenInfo">
-            <div className="price">
-              <ins>◘</ins>
-              <p>{price}</p>
-            </div>
             <div className="duration">
               <ins>◷</ins>
               <p>{duration}</p>

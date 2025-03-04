@@ -1,19 +1,10 @@
 import React from 'react';
 import '../styles/Home.css';
 import Console from './Console/Console.js'
-import { useState, useRef } from "react";
-// import Model from './Model/model'
 import ParticlesComponent from './particles.js';
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls, useGLTF } from "@react-three/drei";
-
-const Model = () => {
-  const { scene } = useGLTF("/robot1.glb");
-  const modelRef = useRef();
-
-  return <primitive ref={modelRef} object={scene} scale={[2, 2, 2]} />;
-
-};
+import { Carousel } from 'react-responsive-3d-carousel'
+import 'react-responsive-3d-carousel/dist/styles.css'
+import { useNavigate } from 'react-router-dom';
 
 const cardsData = [
   {
@@ -41,26 +32,23 @@ const cardsData = [
     titleClass: 'robotics-title'
   },
   {
-    title: 'Marketing',
-    image: 'marketing.jpg',
-    description: 'The Marketing team promotes our projects and events. Members develop strategies for competitions, outreach, manage social media, and create promotional materials, enhancing their skills in communication, branding, and public relations.',
-    titleClass: 'marketing-title'
-  },
-  {
     title: 'Web Development',
     image: 'webdev.jpg',
     description: 'The Web Development team focuses on creating and maintaining our online presence. Members design and develop the club website, manage content, and ensure seamless user experience, honing their skills in web technologies and digital communication.',
     titleClass: 'robotics-title'
   },
-  {
-    title: 'Design',
-    image: 'design.jpg',
-    description: 'The Design Team focuses on creating visual content for promotional and presentation purposes. Members work on graphic design, branding, and multimedia, ensuring our projects are effectively showcased and visually appealing.',
-    titleClass: 'robotics-title'
-  }
 ];
 
+const items = [
+  <img src="https://earthwatcher.photo.blog/wp-content/uploads/2019/07/grand-tetons-at-twilight-from-schwabachers-landing.jpg" alt="image1" />,
+  <img src="https://earthwatcher.photo.blog/wp-content/uploads/2019/07/grand-tetons-at-twilight-from-schwabachers-landing.jpg" alt="image2" />,
+  <img src="https://earthwatcher.photo.blog/wp-content/uploads/2019/07/grand-tetons-at-twilight-from-schwabachers-landing.jpg" alt="image3" />
+]
+
 const Homepage = (props) => {
+
+  const navigate = useNavigate();
+
   return (
     <div className="homepage">
       <ParticlesComponent id="tsparticles" />
@@ -74,15 +62,16 @@ const Homepage = (props) => {
             <span className="gradient-text"> Robotics</span> Section, IIT Roorkee
           </h2>
           <p>We're a student group, bonded by our passion for Robotics. Delving into programming, electronics, and AI through projects and workshops.</p>
-          <button>Our Team</button>
+          <div className="hero-buttons">
+            <button onClick={() => navigate('/Teams')}>Our Team</button>
+            <button className='projects-button' onClick={() => navigate('/Projects')}>Our Projects</button>
+          </div>
         </div>
 
-        {/* <div className="right">
-          <Model />
-        </div> */}
-         <div className="canvas-container">
-            <img src="/model.png" alt="Robot" className="" />
-         </div>
+
+        <div className="canvas-container">
+          <img src="/model.png" alt="Robot" className="" />
+        </div>
 
 
 
@@ -91,7 +80,7 @@ const Homepage = (props) => {
 
       <div className='homepage-console-head-container'>
         <div className='homepage-console-head'>
-        Enter commands, ignite robots!
+          Enter commands, ignite robots!
         </div>
       </div>
       <div className='homepage-console'>
@@ -101,13 +90,44 @@ const Homepage = (props) => {
       <br />
       <h4>Our Verticals</h4>
       <div className="cards-container">
-        {cardsData.map((card, index)=>(
+        {cardsData.map((card, index) => (
           <div className="card" key={index}>
             <img src={card.image} alt={card.title} />
             <h3 className={card.titleClass}>{card.title}</h3>
             <p>{card.description}</p>
           </div>
         ))}
+      </div>
+
+      <br />
+      <h4>Our Team</h4>
+      <div className="team-div" onClick={() => navigate('/Teams')}>
+        <div className="team-member">
+          <img src="member.jpg" alt="Member 1" />
+          <p>Member 1</p>
+        </div>
+        <div className="team-member">
+          <img src="member2.jpg" alt="Member 2" />
+          <p>Member 2</p>
+        </div>
+        <div className="team-member">
+          <img src="member3.jpg" alt="Member 3" />
+          <p>Member 3</p>
+        </div>
+        <div className="team-member">
+          <img src="member4.jpg" alt="Member 4" />
+          <p>Member 4</p>
+        </div>
+      </div>
+
+      <br />
+      <h4>Gallery</h4>
+      <div className="carousel">
+        <Carousel
+          items={items}
+          startIndex={0}
+          onClickItem={() => navigate('/Gallery')}
+        />
       </div>
     </div>
   );

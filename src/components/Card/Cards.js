@@ -73,10 +73,7 @@ const verticals = [
   "Electronics",
   "Mechanical",
   "Web Development",
-  "Design",
   "ROS",
-  "Sponsorship",
-  "Marketing",
 ];
 
 function Teams() {
