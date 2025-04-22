@@ -17,11 +17,5 @@ jobs:
         run: |
           ssh -o StrictHostKeyChecking=no \
               -o UserKnownHostsFile=/dev/null \
-              ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} "
-            cd /var/www/website/marsiitr.github.io &&
-            git fetch origin new &&
-            git checkout new &&
-            npm install &&
-            npm run build &&
-            sudo systemctl restart nginx
-          "
+              -i ${{ secrets.SSH_PRIVATE_KEY }} \
+              ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} 
