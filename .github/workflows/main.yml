@@ -15,9 +15,9 @@ jobs:
           
       - name: Deploy React App
         run: |
-          ssh -o StrictHostKeyChecking=no \
-              -o UserKnownHostsFile=/dev/null \
-              ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} "
+           ssh -o StrictHostKeyChecking=no \
+        -i ${{ secrets.SSH_PRIVATE_KEY_FILE }} \  
+        ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} "
             cd /var/www/website/marsiitr.github.io &&
             git fetch origin new &&
             git checkout new &&
