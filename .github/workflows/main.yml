@@ -1,0 +1,23 @@
+name: Deploy new Branch
+on:
+  push:
+    branches: [new]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install SSH Key
+        uses: webfactory/ssh-agent@v0.7.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+      - name: Deploy to EC2
+        run: |
+          ssh -o StrictHostKeyChecking=no ubuntu@13.201.18.37 "
+            cd /var/www/your-repo &&
+            git fetch origin new:new &&
+            git checkout new &&
+            npm install &&
+            npm run build &&
+            sudo systemctl restart nginx
+          "
