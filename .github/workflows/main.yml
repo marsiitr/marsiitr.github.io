@@ -15,19 +15,13 @@ jobs:
           
       - name: Deploy React App
         run: |
-           - name: Deploy to EC2
-  run: |
-    mkdir -p ~/.ssh
-    echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/ec2_key
-    chmod 600 ~/.ssh/ec2_key
-    ssh -o StrictHostKeyChecking=no \
-        -o UserKnownHostsFile=/dev/null \
-        -i ~/.ssh/ec2_key \
-        ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} "
-      cd /var/www/website/marsiitr.github.io &&
-      git fetch origin new &&
-      git checkout new &&
-      npm install &&
-      npm run build &&
-      sudo systemctl restart nginx
-    "
+          ssh -o StrictHostKeyChecking=no \
+              -o UserKnownHostsFile=/dev/null \
+              ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} "
+            cd /var/www/website/marsiitr.github.io &&
+            git fetch origin new &&
+            git checkout new &&
+            npm install &&
+            npm run build &&
+            sudo systemctl restart nginx
+          "
