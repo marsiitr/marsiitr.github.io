@@ -282,7 +282,7 @@ const Console = (props) => {
                 <div className="input-div">
                     <span>mars@raspberrypi ~$ </span>
                     {/*<span className="console-arrow">❯</span>*/}
-                    <input type="text" value={inputValue} autoFocus
+                    <input type="text" value={inputValue}
                         onChange={inputChange} className="console-input"
                         autoCapitalize='off' autoComplete='off' autoCorrect='off'
                         onFocus={startBlinking} onBlur={stopBlinking}

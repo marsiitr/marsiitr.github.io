@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
-
+import ParticlesComponent from '../particles.js';
 function Gallery() {
   const [images, setImages] = useState([]);
   const folderId = process.env.REACT_APP_FOLDER_ID;
@@ -26,6 +26,7 @@ function Gallery() {
 
   return (
     <div>
+      <ParticlesComponent id="tsparticles" />
       <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
         <Masonry columnsCount={4} gutter="10px">
           {images.map((image, i) => (

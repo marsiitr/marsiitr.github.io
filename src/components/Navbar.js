@@ -40,9 +40,9 @@ const Navbar = () => {
             <li className="item">
               <a href="/Gallery" className="c">Gallery</a>
             </li>
-            <li className="item">
+            {/* <li className="item">
               <a href="/Teams" className="c">Teams</a>
-            </li>
+            </li> */}
             <li className="item">
               <a href="/achievements" className="c">Achievements</a>
             </li>

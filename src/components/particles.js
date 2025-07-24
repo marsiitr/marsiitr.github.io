@@ -28,11 +28,17 @@ const ParticlesComponent = (props) => {
 		  "composite": "destination-out",
 		  "cover": {
 			"color": {
-			  "value": "#fff"
+			  "value": "#0F0F23"
 			},
 			"opacity": 1
 		  },
 		  "enable": false
+		},
+		"background": {
+		  "color": {
+			"value": "#000000"
+		  },
+		  "image": "linear-gradient(135deg, #000000ff 0%, #080408ff 50%, #000000ff 100%)"
 		},
 		"clear": true,
 		"defaultThemes": {},
@@ -149,7 +155,7 @@ const ParticlesComponent = (props) => {
 			  "area": {
 				"gradient": {
 				  "start": {
-					"value": "#ffffff"
+					"value": "#1a1a1a"
 				  },
 				  "stop": {
 					"value": "#000000"
@@ -159,7 +165,7 @@ const ParticlesComponent = (props) => {
 			  },
 			  "shadow": {
 				"color": {
-				  "value": "#000000"
+				  "value": "#ffffff"
 				},
 				"length": 2000
 			  }
@@ -197,7 +203,7 @@ const ParticlesComponent = (props) => {
 			}
 		  },
 		  "color": {
-			"value": "#D331A2",
+			"value": ["#8B5CF6", "#EC4899", "#A855F7", "#F472B6", "#9333EA"],
 			"animation": {
 			  "h": {
 				"count": 0,
@@ -329,7 +335,7 @@ const ParticlesComponent = (props) => {
 		  "shadow": {
 			"blur": 0,
 			"color": {
-			  "value": "#000"
+			  "value": "#fff"
 			},
 			"enable": false,
 			"offset": {
@@ -417,7 +423,7 @@ const ParticlesComponent = (props) => {
 			  "frequency": 0.005,
 			  "opacity": 1,
 			  "color": {
-				"value": "#ff0000"
+				"value": "#C084FC"
 			  }
 			},
 			"particles": {
@@ -425,7 +431,7 @@ const ParticlesComponent = (props) => {
 			  "frequency": 0.05,
 			  "opacity": 1,
 			  "color": {
-				"value": "#ffff00"
+				"value": "#F472B6"
 			  }
 			}
 		  },
@@ -478,7 +484,7 @@ const ParticlesComponent = (props) => {
 		  "links": {
 			"blink": false,
 			"color": {
-			  "value": "#ffffff"
+			  "value": "#6B46C1"
 			},
 			"consent": false,
 			"distance": 150,
@@ -488,7 +494,7 @@ const ParticlesComponent = (props) => {
 			"shadow": {
 			  "blur": 5,
 			  "color": {
-				"value": "#000"
+				"value": "#fff"
 			  },
 			  "enable": false
 			},

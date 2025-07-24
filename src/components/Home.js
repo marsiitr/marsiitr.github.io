@@ -5,6 +5,8 @@ import ParticlesComponent from './particles.js';
 import { Carousel } from 'react-responsive-3d-carousel'
 import 'react-responsive-3d-carousel/dist/styles.css'
 import { useNavigate } from 'react-router-dom';
+import AnimatedSVGHeader from './animationrobo.js';
+import AnimatedConstructionLogo from './animationrobo.js';
 
 const cardsData = [
   {
@@ -40,10 +42,13 @@ const cardsData = [
 ];
 
 const items = [
-  <img src="https://earthwatcher.photo.blog/wp-content/uploads/2019/07/grand-tetons-at-twilight-from-schwabachers-landing.jpg" alt="image1" />,
-  <img src="https://earthwatcher.photo.blog/wp-content/uploads/2019/07/grand-tetons-at-twilight-from-schwabachers-landing.jpg" alt="image2" />,
-  <img src="https://earthwatcher.photo.blog/wp-content/uploads/2019/07/grand-tetons-at-twilight-from-schwabachers-landing.jpg" alt="image3" />
-]
+  <img src="/group1.jpeg" alt="image1" width="500" height="400" />,
+  <img src="/group2.jpeg" alt="image1" width="300" height="200" />,
+  <img src="/group3.jpeg" alt="image1" width="300" height="200" />,
+  <img src="/group4.jpeg" alt="image1" width="300" height="200" />,
+  <img src="/group6.png" alt="image1" width="300" height="200" />,
+];
+
 
 const Homepage = (props) => {
 
@@ -52,25 +57,31 @@ const Homepage = (props) => {
   return (
     <div className="homepage">
       <ParticlesComponent id="tsparticles" />
+      <div className='anidiv'  > <AnimatedConstructionLogo className="ani"/></div>
+    
+
+    
 
       <main className="main-content">
 
         <div className="left">
-          <div className="header-line">Heart of Robotics at R-Land</div>
+          {/* <div className="header-line">Heart of Robotics at R-Land</div> */}
           <h2>
-            <span className="gradient-text">Models</span> and
-            <span className="gradient-text"> Robotics</span> Section, IIT Roorkee
-          </h2>
+  <span className="gradient-text">Models</span> and
+  <span className="gradient-text"> Robotics</span> Section
+  <br />
+  <span className="gradient-text-2">IIT Roorkee</span>
+</h2>
           <p>We're a student group, bonded by our passion for Robotics. Delving into programming, electronics, and AI through projects and workshops.</p>
           <div className="hero-buttons">
-            <button onClick={() => navigate('/Teams')}>Our Team</button>
+            {/* <button onClick={() => navigate('/Teams')}>Our Team</button> */}
             <button className='projects-button' onClick={() => navigate('/Projects')}>Our Projects</button>
           </div>
         </div>
 
 
         <div className="canvas-container">
-          <img src="/model.png" alt="Robot" className="" />
+          {/* <img src="/model.png" alt="Robot" className="" /> */}
         </div>
 
 
@@ -100,28 +111,12 @@ const Homepage = (props) => {
       </div>
 
       <br />
-      <h4>Our Team</h4>
-      <div className="team-div" onClick={() => navigate('/Teams')}>
-        <div className="team-member">
-          <img src="member.jpg" alt="Member 1" />
-          <p>Member 1</p>
-        </div>
-        <div className="team-member">
-          <img src="member2.jpg" alt="Member 2" />
-          <p>Member 2</p>
-        </div>
-        <div className="team-member">
-          <img src="member3.jpg" alt="Member 3" />
-          <p>Member 3</p>
-        </div>
-        <div className="team-member">
-          <img src="member4.jpg" alt="Member 4" />
-          <p>Member 4</p>
-        </div>
-      </div>
+      {/* <h4>Our Team</h4> */}
+      {/*   */}
 
       <br />
       <h4>Gallery</h4>
+      
       <div className="carousel">
         <Carousel
           items={items}
