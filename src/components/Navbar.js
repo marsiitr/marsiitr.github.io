@@ -25,7 +25,7 @@ const Navbar = () => {
       <div className="container">
         <div className="Left">
           <img src="/logo.png" alt="MaRS Logo" className="logo" />
-          <h1>MaRS</h1>
+          <h1 className='newfont' >MaRS</h1>
         </div>
         <div className="Right">
           <ul id="navbar" className={clicked ? "active" : ""}>

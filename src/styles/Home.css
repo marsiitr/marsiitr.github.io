@@ -12,7 +12,14 @@
   /* height: 100vh; */
   padding: 0 12px;
 }
-
+.newfont{
+   background: linear-gradient(90deg, #D933A1, #9C22AA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* For better browser support */
+    font-size: 2.4rem; 
+   font-family: "Michroma", sans-serif;
+}
 #tsparticles {
   position: absolute;
   width: 100%;
@@ -175,6 +182,18 @@ button:hover {
 }
 
 .projects-button:hover {
+  background-color: #FCFFFE;
+  color: rgb(2, 2, 37);
+}
+.gallery-button {
+  margin-top: 10vh;
+  width: 12%;
+  background-color: transparent;
+  border: 1px solid #FCFFFE;
+  color: #FCFFFE;
+}
+
+.gallery-button:hover {
   background-color: #FCFFFE;
   color: rgb(2, 2, 37);
 }
@@ -374,9 +393,13 @@ button:hover {
 }
 
 .carousel {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
   width: 80%;
   margin: 2%;
-  margin-bottom: 20vh;
+  margin-bottom: 15vh;
 }
 
 @media screen and (min-width: 1024px) {

@@ -99,7 +99,7 @@ const Homepage = (props) => {
       </div>
 
       <br />
-      <h4>Our Verticals</h4>
+      <h4 className='newfont'>Our Verticals</h4>
       <div className="cards-container">
         {cardsData.map((card, index) => (
           <div className="card" key={index}>
@@ -115,7 +115,7 @@ const Homepage = (props) => {
       {/*   */}
 
       <br />
-      <h4>Gallery</h4>
+      <h4 className='newfont'>Gallery</h4>
       
       <div className="carousel">
         <Carousel
@@ -123,6 +123,7 @@ const Homepage = (props) => {
           startIndex={0}
           onClickItem={() => navigate('/Gallery')}
         />
+          <button className='gallery-button' onClick={() => navigate('/Gallery')}>See More..</button>
       </div>
     </div>
   );

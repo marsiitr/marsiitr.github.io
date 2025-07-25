@@ -10,7 +10,7 @@ const Footer = () => {
         </div>
         
         <div className="footer-column title-column">
-          <h3>Models and Robotics Section, IIT Roorkee</h3>
+          <h3 className='newfont'>Models and Robotics Section, IIT Roorkee</h3>
         </div>
 
         <div className="footer-column contact-column">
