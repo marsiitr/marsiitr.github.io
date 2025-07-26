@@ -12,7 +12,14 @@
   /* height: 100vh; */
   padding: 0 12px;
 }
-
+.newfont{
+   background: linear-gradient(90deg, #D933A1, #9C22AA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* For better browser support */
+    font-size: 2.4rem; 
+   font-family: "Michroma", sans-serif;
+}
 #tsparticles {
   position: absolute;
   width: 100%;
@@ -21,6 +28,18 @@
   left: 0;
   z-index: -1;
 }
+.ani {
+  position: fixed;
+  top: 50vh;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0; /* Behind other content */
+  pointer-events: none;
+  opacity: 0.3; /* Adjust transparency as needed */
+}
+
+
 
 .main-content {
   font-size: 18px;
@@ -33,27 +52,81 @@
   padding: 20px 0px;
   display: flex;
   min-height: 400px;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+  font-family: "Michroma", sans-serif;
+  /* background-color: red; */
   /* height: 100vh; */
 }
 
 .left {
-  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content:center ;
+  align-items: center;
+  width: 100%;
 }
 
 
 .main-content h2 {
-  font-size: 50px;
-  font-weight: 800;
+  margin-top: 11vh;
+  font-size: 80px;
+  font-weight: 500;
   line-height: 1.2;
   color: aliceblue;
-  margin-bottom: -5px;
+ 
+    font-family: "Michroma", sans-serif;
+}
+.gradient-text {
+  background: linear-gradient(90deg, #D933A1, #9C22AA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* For better browser support */
+  font-size: clamp(2rem, 8vw, 5rem); /* Responsive font size */
+  font-weight: 900;
+  line-height: 1;
+  font-family: "Michroma", sans-serif;
 }
 
+/* Alternative approach with breakpoints */
+@media (max-width: 1200px) {
+  .gradient-text {
+    font-size: 4rem; /* 64px */
+  }
+}
+
+@media (max-width: 768px) {
+  .gradient-text {
+    font-size: 2.5rem; /* 40px */
+  }
+}
+
+@media (max-width: 480px) {
+  .gradient-text {
+    font-size: 2.4rem; /* 28.8px */
+    line-height: 1.1;
+  }
+}
+
+@media (max-width: 320px) {
+  .gradient-text {
+    font-size: 1.5rem; /* 24px */
+  }
+}
+.gradient-text-2 {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(90deg, #ffffff, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Michroma", sans-serif;
+}
 .main-content p {
-  margin-top: 20px;
+  width: 50%;
   font-size: 20px;
+  font-family: "Michroma", sans-serif;
 }
 
 h4 {
@@ -112,12 +185,21 @@ button:hover {
   background-color: #FCFFFE;
   color: rgb(2, 2, 37);
 }
-
-.gradient-text {
-  background: linear-gradient(90deg, #D933A1, #9C22AA);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.gallery-button {
+  margin-top: 10vh;
+  width: 12%;
+  background-color: transparent;
+  border: 1px solid #FCFFFE;
+  color: #FCFFFE;
 }
+
+.gallery-button:hover {
+  background-color: #FCFFFE;
+  color: rgb(2, 2, 37);
+}
+
+
+
 
 .homepage-console {
   border: 1px solid rgb(110, 109, 109);
@@ -156,6 +238,9 @@ button:hover {
   .homepage {
     padding: 0 6px;
   }
+ .anidiv{
+  display: none;
+}
 
   .main-content {
     font-size: 16px;
@@ -207,7 +292,7 @@ button:hover {
   border-radius: 10px;
   padding: 25px;
   color: white;
-  width: 25%;
+  width: 21%;
   min-width: 250px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.3s ease, transform 0.3s ease;
@@ -308,9 +393,13 @@ button:hover {
 }
 
 .carousel {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  width: 80%;
   margin: 2%;
-  margin-bottom: 40px;
+  margin-bottom: 15vh;
 }
 
 @media screen and (min-width: 1024px) {

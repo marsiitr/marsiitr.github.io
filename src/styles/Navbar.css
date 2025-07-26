@@ -22,7 +22,7 @@ body {
 }
 
 .scrollednav {
-    background-color: #100322;
+    background-color: #080408ff;
     transition: background-color 0.5s ease;
 }
 
@@ -61,7 +61,14 @@ body {
     font-size: 17.5px;
     cursor: pointer;
 }
-
+.newfont{
+   background: linear-gradient(90deg, #e6e5e5, #bd7fc4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* For better browser support */
+    font-size: 2.4rem; 
+   font-family: "Michroma", sans-serif;
+}
 .c:hover {
     color: #FFFFFF;
 }
@@ -96,7 +103,7 @@ body {
         box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
         padding: 15px 0 0 10px;
         transition: right 0.3s ease;
-        background: rgba(182, 96, 182, 0.3);
+        background: rgba(14, 13, 14, 0.3);
         box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
         backdrop-filter: blur(9px);
         -webkit-backdrop-filter: blur(9px);

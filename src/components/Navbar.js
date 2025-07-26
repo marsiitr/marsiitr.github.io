@@ -25,7 +25,7 @@ const Navbar = () => {
       <div className="container">
         <div className="Left">
           <img src="/logo.png" alt="MaRS Logo" className="logo" />
-          <h1>MaRS</h1>
+          <h1 className='newfont' >MaRS</h1>
         </div>
         <div className="Right">
           <ul id="navbar" className={clicked ? "active" : ""}>
@@ -40,9 +40,9 @@ const Navbar = () => {
             <li className="item">
               <a href="/Gallery" className="c">Gallery</a>
             </li>
-            <li className="item">
+            {/* <li className="item">
               <a href="/Teams" className="c">Teams</a>
-            </li>
+            </li> */}
             <li className="item">
               <a href="/achievements" className="c">Achievements</a>
             </li>
